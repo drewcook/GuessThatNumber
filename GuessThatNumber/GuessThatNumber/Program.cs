@@ -79,7 +79,7 @@ namespace GuessThatNumber
             string playerName = Console.ReadLine();
             
             //create a gateway to the database
-            DrewEntities db = new DrewEntities();
+            spDrewEntities db = new spDrewEntities();
  
             //create a new highscore object
             HighScore newHighscore = new HighScore();
@@ -109,7 +109,7 @@ namespace GuessThatNumber
             Console.WriteLine("Guess That Number High Scores!");
             Console.WriteLine("==============================");
             //create a new connection to the database
-            DrewEntities db = new DrewEntities();
+            spDrewEntities db = new spDrewEntities();
             //get the high score list
             //pull from our HighScores database where the game is "Guess That Number, order by highest score, and only take the top 10 scores
             List<HighScore> highScoreList = db.HighScores.Where(x => x.Game == "Guess That Number").OrderBy(x => x.Score).Take(10).ToList();

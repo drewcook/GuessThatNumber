@@ -13,10 +13,10 @@ namespace GuessThatNumber
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DrewEntities : DbContext
+    public partial class spDrewEntities : DbContext
     {
-        public DrewEntities()
-            : base("name=DrewEntities")
+        public spDrewEntities()
+            : base("name=spDrewEntities")
         {
         }
     
