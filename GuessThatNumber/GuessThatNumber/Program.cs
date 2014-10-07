@@ -68,7 +68,6 @@ namespace GuessThatNumber
 
             Console.WriteLine("\n\n\nThank you for playing Guess That Number!!!");
             Console.WriteLine("\n\n\nPress any key to exit...");
-            Console.ReadLine();
             //AddHighScore(numGuesses);
             //DisplayHighScores();
             
